@@ -69,7 +69,7 @@ class ShapeBufferGeometry extends BufferGeometry {
 
 			// check direction of vertices
 
-			if ( ShapeUtils.isClockWise( shapeVertices ) === false ) {
+			if ( global.reversePolygon = !ShapeUtils.isClockWise( shapeVertices ) ) {
 
 				shapeVertices = shapeVertices.reverse();
 
